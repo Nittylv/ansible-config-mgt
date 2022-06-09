@@ -10,6 +10,12 @@ pipeline {
       }
     }
     
+    stage('Package') {
+      steps {
+        script {
+          sh 'echo "Package Stage"'
+=======
+    
     stage('Test') {
       steps {
         script {
