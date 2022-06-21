@@ -33,8 +33,19 @@ pipeline {
         }
       }
     }
+    
+
+    stage('Clean Up') {
+      steps {
+        script {
+          sh 'echo "Clean Up Stage"'
+        }
+      }
+    }
     }
 }
+
+
 
     
 
